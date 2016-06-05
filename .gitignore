@@ -194,3 +194,5 @@ obj/
 typings/
 *.log
 *.map
+*.js
+!systemjs.config.js
