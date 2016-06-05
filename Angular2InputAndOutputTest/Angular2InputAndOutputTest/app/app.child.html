@@ -1,0 +1,6 @@
+﻿<!DOCTYPE html>
+<h2>子供です</h2>
+<div>{{childName}}へ</div>
+<div *ngIf="msg">
+    <h3 (click)="checking(msg.text)">親からのメッセージ「{{msg.text}}」</h3>
+</div>

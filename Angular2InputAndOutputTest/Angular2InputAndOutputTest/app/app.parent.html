@@ -1,0 +1,10 @@
+﻿<!DOCTYPE html>
+<h1>Input OutPutテスト</h1>
+<h2>親です</h2>
+<ul class="msgs">
+    <li *ngFor="let msg of msgs" (click)="onSelect(msg)" [class.selected]="msg === selectedMsg">
+        <span>{{msg.id}}</span> {{msg.text}}
+    </li>
+</ul>
+<h3 *ngIf="childReply">{{childReply}}</h3>
+<my-app-child (checking)="onChecking($event)" [msg]="selectedMsg" child-name="たかし"></my-app-child>
